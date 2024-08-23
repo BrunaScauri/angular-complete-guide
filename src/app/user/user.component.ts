@@ -13,4 +13,7 @@ const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
 export class UserComponent {
   selectedUser = DUMMY_USERS[randomIndex]; //on a constant, selecting randomly
 
+  get imagePath() {
+    return 'assets/users/'
+  }
 }
