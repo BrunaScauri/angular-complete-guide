@@ -14,4 +14,8 @@ import { DUMMY_USERS } from '../assets/users/dummy-users';
 export class AppComponent {
   title = 'angular-project';
   users = DUMMY_USERS;
+
+  onSelectUser(id: string) {
+    console.log('Selected user:', id)
+  }
 }
