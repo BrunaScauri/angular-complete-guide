@@ -1,5 +1,11 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
+interface User {
+  id: string;
+  name: string;
+  avatar: string;
+}
+
 @Component({
   selector: 'app-user',
   standalone: true,
@@ -10,11 +16,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 
 export class UserComponent {
-  @Input({required: true}) user!: { //type: object
-    id: string;
-    name: string;
-    avatar: string;
-  }
+  @Input({required: true}) user!: User; //type: object
   @Output() select = new EventEmitter();
   // select = output<string>(); -> another way of setting a decorator. It will not send a signal, though.
   get imagePath() {
