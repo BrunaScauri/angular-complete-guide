@@ -10,16 +10,18 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 
 export class UserComponent {
-  @Input({required: true}) id!: string;
-  @Input({required: true}) avatar!: string; //uninitialilzed property
-  @Input({required: true}) name!: string;
+  @Input({required: true}) user!: { //type: object
+    id: string;
+    name: string;
+    avatar: string;
+  }
   @Output() select = new EventEmitter();
-
+  // select = output<string>(); -> another way of setting a decorator. It will not send a signal, though.
   get imagePath() {
-    return '/assets/users/' + this.avatar;
+    return '/assets/users/' + this.user.avatar;
   }
 
   onSelectUser() {
-    this.select.emit(this.id)
+    this.select.emit(this.user.id)
   }
 }
