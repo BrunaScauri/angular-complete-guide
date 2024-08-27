@@ -2,8 +2,7 @@
 
 Repo for Udemy's "Master Angular (formerly "Angular 2") and build awesome, reactive web apps with the successor of Angular.js" course.
 
-
-## Practiced so far:
+## Practiced so far
 
 - Setting up an Angular environment;
 - Creating/managing/styling custom components;
@@ -15,6 +14,8 @@ Repo for Udemy's "Master Angular (formerly "Angular 2") and build awesome, react
 - Components inputs/outputs;
 - Custom events;
 - Emitting data;
+- Configurable components;
+- TS: Type Aliases/interfaces;
 
 ## Tools
 
