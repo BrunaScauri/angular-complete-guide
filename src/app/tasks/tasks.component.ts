@@ -12,6 +12,7 @@ import { NewTaskComponent } from './new-task/new-task.component';
 export class TasksComponent {
   @Input({ required: true }) userId!: string;
   @Input({ required: true }) name!:string;
+  // @Output() isAddingTask:boolean = false;
   isAddingTask = false;
   tasks = [
     {
@@ -47,6 +48,10 @@ export class TasksComponent {
 
   onStartAddTask() {
     this.isAddingTask = true;
+  }
+
+  onCancelAddTask() {
+    this.isAddingTask = false;
   }
 
 }
