@@ -16,6 +16,7 @@ Repo for Udemy's "Master Angular (formerly "Angular 2") and build awesome, react
 - Emitting data;
 - Configurable components;
 - TS: Type Aliases/interfaces;
+- Outputting conditional content;
 
 ## Tools
 
