@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 import { TaskComponent } from "./task/task.component";
 
 @Component({
@@ -11,6 +11,7 @@ import { TaskComponent } from "./task/task.component";
 export class TasksComponent {
   @Input({ required: true }) userId!: string;
   @Input({ required: true }) name!:string;
+  @Output() newTask!:string ;
   tasks = [
     {
       id: 't1',
@@ -37,6 +38,22 @@ export class TasksComponent {
 
   get selectedUserTasks() {
     return this.tasks.filter((task) => task.userId == this.userId)
+  }
+
+  onCompleteTask(id: string) {
+    this.tasks = this.tasks.filter((task => task.id !== id))
+  }
+
+  startAddingTask() {
+    this.tasks.push(
+        {
+          id: 't3',
+          userId: 'u3',
+          title: 'Master c#',
+          summary: 'Learn all the basics and advanced c# features',
+          dueDate: '2525-12-31'
+        }
+    )
   }
 
 }
