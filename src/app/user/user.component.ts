@@ -14,8 +14,9 @@ export class UserComponent {
   @Input({ required: true }) user!: User; //type: object
   @Output() select = new EventEmitter();
   // select = output<string>(); -> another way of setting a decorator. It will not send a signal, though.
+  @Input({ required: true }) selected!: boolean;
   get imagePath() {
-    return '/assets/users/' + this.user.avatar;
+    return './assets/users/' + this.user.avatar;
   }
 
   onSelectUser() {
