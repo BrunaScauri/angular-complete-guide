@@ -17,6 +17,10 @@ Repo for Udemy's "Master Angular (formerly "Angular 2") and build awesome, react
 - Configurable components;
 - TS: Type Aliases/interfaces;
 - Outputting conditional content;
+- Directives/Two-way binding;
+- Handling form submission;
+- Content projection;
+- Dependency injection;
 
 ## Tools
 
