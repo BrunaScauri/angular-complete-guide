@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { type User } from './user.model'
+// import images from '
 
 @Component({
   selector: 'app-user',
@@ -14,8 +15,9 @@ export class UserComponent {
   @Output() select = new EventEmitter();
   // select = output<string>(); -> another way of setting a decorator. It will not send a signal, though.
   @Input({ required: true }) selected!: boolean;
-  get imagePath() {
-    return './assets/users/' + this.user.avatar;
+
+  get userAvatar() {
+    return '../../../public/users/' + this.user.avatar;
   }
 
   onSelectUser() {

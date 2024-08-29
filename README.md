@@ -23,6 +23,7 @@ Repo for Udemy's "Master Angular (formerly "Angular 2") and build awesome, react
 - Dependency injection;
 - Creating/bootstrapping components with Angular Modules;
 - Combining standalone/non-standalone components;
+- Creating/using shared modules.
 
 ## Tools
 
