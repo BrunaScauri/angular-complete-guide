@@ -21,6 +21,8 @@ Repo for Udemy's "Master Angular (formerly "Angular 2") and build awesome, react
 - Handling form submission;
 - Content projection;
 - Dependency injection;
+- Creating/bootstrapping components with Angular Modules;
+- Combining standalone/non-standalone components;
 
 ## Tools
 
