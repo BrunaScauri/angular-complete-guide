@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
+import { FormsModule } from "@angular/forms";
 
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./header/header.component";
@@ -10,9 +11,9 @@ import { TaskComponent } from "./tasks/task/task.component";
 import { NewTaskComponent } from "./tasks/new-task/new-task.component";
 
 @NgModule ({
-  declarations:[AppComponent, HeaderComponent, UserComponent, TasksComponent],
+  declarations:[AppComponent, HeaderComponent, UserComponent, TasksComponent,TaskComponent, NewTaskComponent, CardComponent],
   bootstrap: [AppComponent],
-  imports: [BrowserModule, CardComponent, TaskComponent, NewTaskComponent]
+  imports: [BrowserModule, FormsModule]
 })
 
 export class AppModule {}
